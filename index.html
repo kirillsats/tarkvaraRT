@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Valuuta konverter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+<div class="container">
+    <!-- Заголовок -->
+    <div class="header">
+        <h1>Valuuta konverter</h1>
+    </div>
+
+    <!-- Форма -->
+    <div class="form">
+        <p>
+            <label>Lähtevaluuta: </label>
+            <select id="fromCurrency" onchange="moneyConverter()">
+                <option value="" selected disabled>Vali valuuta</option>
+                <option value="USD">USD</option>
+                <option value="EUR">EUR</option>
+                <option value="RUB">RUB</option>
+                <option value="SEK">SEK</option>
+                <option value="AED">AED</option>
+            </select>
+        </p>
+        <p>
+            <label>Sihtvaluuta: </label>
+            <select id="toCurrency" onchange="moneyConverter()">
+                <option value="" selected disabled>Vali valuuta</option>
+                <option value="USD">USD</option>
+                <option value="EUR">EUR</option>
+                <option value="RUB">RUB</option>
+                <option value="SEK">SEK</option>
+                <option value="AED">AED</option>
+            </select>
+        </p>
+        <p>
+            <label>Sisetage kogus: </label>
+            <input type="number" id="amount" placeholder="Sisestage kogus" oninput="moneyConverter()">
+        </p>
+        <p>
+            <label>Tulemus: </label>
+            <span id="result"></span>
+        </p>
+    </div>
+
+
+    <!-- Правила -->
+    <div class="rules">
+        <ul>
+            <li>Valige välja lt valuuta, mida soovite konverteerida <strong>"Lähtevaluuta"</strong>.</li>
+            <li>Valige kastis valuuta, millesse soovite teisendada <strong>"Sihtvaluuta"</strong>.</li>
+            <li>Sisestage väljale konverteeritav summa<strong>"Summa"</strong>.</li>
+            <li>Konversiooni tulemus ilmub väljale <strong>"Tulemus"</strong>.</li>
+        </ul>
+    </div>
+</div>
+
+
+
+<script src="script.js"></script>
+</body>
+</html>

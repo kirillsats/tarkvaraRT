@@ -1,0 +1,72 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+}
+
+.container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 700px; /* Ширина контейнера */
+    display: flex;
+    flex-direction: column; /* Элементы идут сверху вниз */
+    gap: 20px; /* Отступы между блоками */
+    align-items: flex-start; /* Выравниваем элементы в контейнере слева */
+}
+
+.header h1 {
+    font-size: 2rem;
+    text-align: center; /* Заголовок по центру */
+    width: 100%;
+    margin: 0;
+    color: #444;
+}
+
+.rules {
+    text-align: left;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.rules ul {
+    padding-left: 20px;
+    margin: 0;
+}
+
+.rules li {
+    margin-bottom: 10px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column; /* Все элементы формы в столбец */
+    gap: 15px; /* Расстояние между элементами формы */
+    width: 100%;
+}
+
+label {
+    font-weight: bold;
+}
+
+select, input[type="number"] {
+    width: 100%; /* Элементы растягиваются на ширину формы */
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+#result {
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
